@@ -9,9 +9,6 @@ class Shape {
     public:
         void setvalues(float w, float h) 
         {
-            cout << "Setting the Dimensions using the parent Class: Shape\n";
-            cout << "The dimensions are: " << w << " and " << h << "\n\n";
-
             width = w;
             height = h;
         }
@@ -40,8 +37,8 @@ class Triangle: public Shape
 //Defining the main method to access the members of the class
 int main() 
 {
-    cout << "\n\n ============  Welcome to officialsikandar Git-Hub Account  =========== \n";
-    cout << " ==================  Find Area & Volume of a Cuboid  ================== \n";
+    cout << " =============  Welcome to officialsikandar Git-Hub Account  ============= \n";
+    cout << " ==================  Find Area of Rectangle & Triangle  ==================\n\n";
     Rectangle rect;                     //Declaring the Class objects
     Triangle tri;                       //Declaring the Class objects
     double tw,th;                       //Varible Declaring for Input from user
@@ -50,13 +47,12 @@ int main()
     rect.setvalues(tw, th);             //pasing values to rectangle
     tri.setvalues(tw, th);              //pasing values to triangle
     cout << "\n";
-    cout << "********************************************************************\n\n";
+    cout << "==========================================================================\n\n";
     cout << " =============  Welcome to officialsikandar Git-Hub Account  ============= \n";
     cout << " ==================  Find Area of Rectangle & Triangle  ==================\n\n";
-    cout << "********************************************************************\n";
+    cout << "==========================================================================\n\n";
     cout << "\nArea of the Rectangle\t||\t" <<"Area of the Triangle"<< "\n\n";
     cout <<"\n"<<rect.area()<<"\t\t\t||\t"<<tri.area()<< "\n\n";
-    cout << "********************************************************************\n";
-
+    cout << "==========================================================================\n\n";
     return 0;
 }
