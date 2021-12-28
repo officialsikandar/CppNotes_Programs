@@ -1,21 +1,16 @@
 #include <iostream>
 using namespace std;
 class Shape {
-    //protected member
-    protected:
+    protected:                                                                  //protected member
         float width, height;
-
-    //public members
-    public:
+    public:                                                                     //public members
         void setvalues(float w, float h) 
         {
             width = w;
             height = h;
         }
 };
-
-//Class Rectangle inherites the Shape class
-class Rectangle: public Shape 
+class Rectangle: public Shape                                                   //Class Rectangle inherites Shape class
 {
     public: 
         float area() 
@@ -23,9 +18,7 @@ class Rectangle: public Shape
         return (width * height);
         }
 };
-
-//Class Triangle inherites the Shape class
-class Triangle: public Shape 
+class Triangle: public Shape                                                    //Class Triangle inherites Shape class
 {
     public: 
         float area() 
@@ -33,26 +26,24 @@ class Triangle: public Shape
         return (width * height / 2);
         }   
 };
-
-//Defining the main method to access the members of the class
-int main() 
+int main()
 {
     cout << " =============  Welcome to officialsikandar Git-Hub Account  ============= \n";
     cout << " ==================  Find Area of Rectangle & Triangle  ==================\n\n";
-    Rectangle rect;                     //Declaring the Class objects
-    Triangle tri;                       //Declaring the Class objects
-    double tw,th;                       //Varible Declaring for Input from user
+    Rectangle rect;                                                             //Declaring the Class objects
+    Triangle tri;                                                               //Declaring the Class objects
+    double tw,th;                                                               //Varible Declaring for Input from user
     cout<<"Enter Triangle Width and Height\n";
-    cin>>tw>>th;                        //Take Values from user
-    rect.setvalues(tw, th);             //pasing values to rectangle
-    tri.setvalues(tw, th);              //pasing values to triangle
+    cin>>tw>>th;                                                                //Take Values from user
+    rect.setvalues(tw, th);                                                     //pasing values to rectangle
+    tri.setvalues(tw, th);                                                      //pasing values to triangle
     cout << "\n";
     cout << "==========================================================================\n\n";
     cout << " =============  Welcome to officialsikandar Git-Hub Account  ============= \n";
     cout << " ==================  Find Area of Rectangle & Triangle  ==================\n\n";
-    cout << "==========================================================================\n\n";
-    cout << "\nArea of the Rectangle\t||\t" <<"Area of the Triangle"<< "\n\n";
-    cout <<"\n"<<rect.area()<<"\t\t\t||\t"<<tri.area()<< "\n\n";
+    cout << "==========================================================================\n";
+    cout << "Area of the Rectangle\t||\t" <<"Area of the Triangle"<< "";
+    cout <<"\n"<<rect.area()<<"\t\t\t||\t"<<tri.area()<< "\n";                //Output Area of Triangle & Rectangle
     cout << "==========================================================================\n\n";
     return 0;
 }
