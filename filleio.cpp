@@ -1,3 +1,5 @@
+//***********************please create a file first.***********************
+
 #include<iostream>
 #include<fstream>
 #include<string>
